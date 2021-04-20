@@ -1,5 +1,7 @@
 package taeuk.calendar;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
 import java.util.Scanner;
 
 public class Prompt {
@@ -13,20 +15,25 @@ public class Prompt {
         Calendar cal = new Calendar();
 
         int month = 1;
+        int year = 1;
 
         while (true) {
+            System.out.println("년도를 입력하세요.");
+            System.out.println("YEAR> ");
+            year = scanner.nextInt();
             System.out.println("월을 입력하세요.");
-            System.out.println(PROMPT);
+            System.out.println("MONTH> ");
             month = scanner.nextInt();
+            System.out.println(PROMPT);
             if(month == -1) {
                 break;
             }
             if(month > 12) {
                 continue;
             }
-            cal.printCalender(2021, month);
+            cal.printCalender(year, month);
         }
-        System.out.println("Bye~");
+        System.out.println("KKKK~");
         scanner.close();
 
     }
