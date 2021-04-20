@@ -14,8 +14,8 @@ public class Prompt {
         Scanner scanner = new Scanner(System.in);
         Calendar cal = new Calendar();
 
-        int month = 1;
-        int year = 1;
+        int month = -1;
+        int year = -1;
 
         while (true) {
             System.out.println("년도를 입력하세요.");
